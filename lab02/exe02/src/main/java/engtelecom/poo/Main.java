@@ -9,12 +9,22 @@ public class Main {
 
         Random r = new Random();
         int numeroaleatorio = r.nextInt(100);
-        int numerojogador = Integer.parseInt(IO.readln("Entra com o Número"));
+        int numerojogador = Integer.parseInt(IO.readln("Entre com o Número "));
 
         int tentativas = 0;
         while (numeroaleatorio != numerojogador){
             if (numeroaleatorio > numerojogador){
                 IO.println("O número é maior");
+                tentativas++;
+                numerojogador = Integer.parseInt(IO.readln("Entra com o Número "));
+            }
+            if (numeroaleatorio < numerojogador){
+                IO.println("O número é menor");
+                tentativas++;
+                numerojogador = Integer.parseInt(IO.readln("Entra com o Número "));
+            }
         }
+        IO.println("Acertou!");
+        IO.println("Número de tentativas " + tentativas);
     }
 }
