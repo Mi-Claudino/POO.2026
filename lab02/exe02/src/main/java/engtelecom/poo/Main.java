@@ -8,10 +8,10 @@ public class Main {
     static void main() {
 
         Random r = new Random();
-        int numeroaleatorio = r.nextInt(100);
+        int numeroaleatorio = r.nextInt(100) + 1;
         int numerojogador = Integer.parseInt(IO.readln("Entre com o Número "));
 
-        int tentativas = 0;
+        int tentativas = 1;
         while (numeroaleatorio != numerojogador){
             if (numeroaleatorio > numerojogador){
                 IO.println("O número é maior");
