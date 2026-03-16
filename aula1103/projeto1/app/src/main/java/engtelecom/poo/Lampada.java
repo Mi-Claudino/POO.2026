@@ -14,12 +14,12 @@ public class Lampada {
     //    ligada = false;
     //}
 
-    public void ligardesligar(){
+    public void ligarDesligar(){
 //        if (ligada == true){
 //            ligada = false;
 //        }else{
 //            ligada = true;
-//        }
+//        } Temos o jeito extremamente mais sofisticado de fazer a mesma coisa abaixo
         ligada = !ligada;
 
     }
